@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .border-solid-common {
+    @apply border-solid border-[1px] border-gray-300 rounded-md;
+  }
+  .info-btn {
+    @apply border rounded-md border-solid border-blue-400 text-blue-600 px-4 py-1
+  }
+  .info-btn-plain {
+    @apply border rounded-md border-solid border-blue-400 text-blue-600 bg-white px-4 py-1
+  }
+}
+@layer utilities {
+  .disabled {
+    @apply bg-transparent text-gray-400 cursor-not-allowed
+  }
+}
